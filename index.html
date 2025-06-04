@@ -1,12 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>jDraw</title>
-    <script src="https://unpkg.com/konva@9/konva.min.js"></script>
-    <script src="./script.js" defer></script>
+    <meta charset="UTF-8">
+    <title>jdraw Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f8fafc 0%, #dbeafe 100%);
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            color: #2563eb;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        .links {
+            display: flex;
+            gap: 2rem;
+        }
+        .link-card {
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.08);
+            padding: 2rem 3rem;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: #1e293b;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        .link-card:hover {
+            transform: translateY(-6px) scale(1.04);
+            box-shadow: 0 8px 32px rgba(37, 99, 235, 0.15);
+            color: #2563eb;
+        }
+    </style>
 </head>
 <body>
-    <div id="container" style="width: 100%; height: 100%;"></div>
+    <h1>jdraw</h1>
+    <div class="links">
+        <a class="link-card" href="./eyes/index.html">👁️ Eyes</a>
+        <a class="link-card" href="./noise/index.html">🌫️ Noise</a>
+    </div>
 </body>
 </html>
